@@ -1,0 +1,12 @@
+#Find an Euclidian distance between (2, 3) (p1, p2) and (10, 8) (q1, q2)
+#The formula is a2 + b2 = c2
+#when you have two coordinate points the euclidian distance between the two is ((p1-q1)**2 + (p2-q2)**2)**0.5
+p1 = 2
+p2 = 3
+
+q1 = 10
+q2 = 8 
+
+distance = ((p1-q1)**2 + (p2-q2)**2)**0.5
+
+print(distance)
