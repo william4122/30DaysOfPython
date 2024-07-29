@@ -236,9 +236,9 @@ Fitness
 
 - You can pass a argument to the slice method and pick out certain characters
 
->>> language='python'
->>> pto=language[0:6:2]
->>> print('I need my',pto)  
+language='python'
+ pto=language[0:6:2]
+ print('I need my',pto)  
 I need my pto
 
 ## String Methods
@@ -247,9 +247,99 @@ I need my pto
 
 1. capitalize(): converts first character of string to capital letter
 
->>> dance='ella quiere beber'
->>> print(dance.capitalize())
+dance='ella quiere beber'
+print(dance.capitalize())
 Ella quiere beber
 
 2. count(): returns occurences of the subctring in string. 
 
+challenge='Not hitting the zaza for 30 days of python'
+print(challenge.count('y'))
+2
+print(challenge.count('y', 7, 14))
+0
+print(challenge.count('th'))
+2
+
+3. endswith(): checks if a string ends with a specified string
+You get a boolean back from this 
+
+challenge='Not hitting the yankee, during the thirty days of python'
+
+print(challenge.endswith('on'))
+True
+
+print(challenge.endswith('tion')) 
+False
+
+4. expandtabs(): replace tab character with spaces, the default tab size is 8 spaces but it also takes tab size as an argument
+
+```
+>>> challenge='thirty\tdays\tof\tpython'
+>>> print(challenge.expandtabs())
+thirty  days    of      python
+
+>>> print(challenge.expandtabs(69))
+thirty                                                               days                                                                 of                                             
+python
+```
+
+5. find(): returns the index of the first occurrence of a substring, if not found returns -1
+
+'''
+>>> challenge='Thirty days of Python'
+>>> print(challenge.find('y'))
+5
+>>> print(challenge.find('th'))
+17
+'''
+
+6. rfind(): returns index of last occurrence of substring, if not found returns -1
+
+'''
+>>> print(challenge.rfind('y'))
+16
+>>> print(challenge.rfind('th'))
+17
+'''
+
+7. format(): formats a string into nicer output
+
+
+8. index(): Returns the lowest index of a substring
+    arguments = starting, ending index, 
+    defaults 0 and string length -1
+
+'''
+>>> challenge='thirty days of python'
+>>> sub_string='da'
+>>> print(challenge.index(sub_string))
+7
+>>> print(challenge.rindex(sub_string, 9))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+'''
+
+9. rindex(): returns the highest index of a substring
+    arguments = starting, ending index
+    defaults 0 and string length -1 
+
+10.
+
+11.
+
+12.
+
+13.
+
+14.
+15.
+16.
+17.
+18.
+19.
+20.
+21.
+22.
+23.
