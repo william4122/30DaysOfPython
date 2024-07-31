@@ -42,7 +42,7 @@ print(type('will'))
 print(type('rodriguez'))
 print(type('usa'))
 
-'''
+```
 for some reason this will return the following error 
 
 print(type('Will','Ummm','Cuba'))
@@ -54,14 +54,14 @@ TypeError: type.__new__() argument 2 must be tuple, not str
 
 but this works fine??????
 print(type('Will''Ummm''Cuba'))
-'''
+```
 
 #level 3
 
 #xample for each data type: Number (integer, float, complex) string, boolean, list, tuple, set, dictionary
 
 #Numbers
-'''
+```
 Integer = -1,0,1 
 Float = 9.8
 Complex = 1i
@@ -78,7 +78,7 @@ dictionary = {
     "age":"none-ya"
     "iq":"1i"
 }
-'''
+```
 
 
 #Find an Euclidian distance between (2, 3) (p1, p2) and (10, 8) (q1, q2)

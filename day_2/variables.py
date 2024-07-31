@@ -33,7 +33,7 @@ print(len(first_name))
 print(len(last_name))
 print('Difference between first/last name is: ', (len(last_name) - len(first_name)))
 
-'''
+```
 Declare 5 as num_one and 4 as num_two
 Add num_one and num_two and assign the value to a variable total
 Subtract num_two from num_one and assign the value to a variable diff
@@ -44,7 +44,7 @@ Calculate num_one to the power of num_two and assign the value to a variable exp
 
 Figure out what the fuck that means
 Find floor division of num_one by num_two and assign the value to a variable floor_division
-'''
+```
 num_one=5
 num_two=4
 
@@ -66,12 +66,12 @@ print('Modulus 5 of 4 is', remainder)
 exp = num_one ** num_two
 print('Number One raised to the power of number two is', exp)
 
-'''The radius of a circle is 30 meters.
+```The radius of a circle is 30 meters.
 Calculate the area of a circle and assign the value to a variable name of area_of_circle
 Calculate the circumference of a circle and assign the value to a variable name of circum_of_circle
 Take radius as user input and calculate the area.
 Use the built-in input function to get first name, last name, country and age from a user and store the value to their corresponding variable names
-Run help('keywords') in Python shell or in your file to check for the Python reserved words or keywords'''
+Run help('keywords') in Python shell or in your file to check for the Python reserved words or keywords```
 
 #area_of_circle = pi*(r)**2, in this instance i will use pi = 3.14
 
@@ -85,7 +85,7 @@ print('The circumference of the Circle is:', circum_of_circle, 'meters')
 #Take radius as user input and calculate the area.
 radius=input('For what radius would you like to calculate the area of a circle for?')
 #need to convert this input from string to integer
-'''The key to making this work was by getting the user input and casting its value from string data type to integer data type so i could use that variable in the multiplication operation that occurs when getting the area, that way I am not multiplying numbers with strings'''
+```The key to making this work was by getting the user input and casting its value from string data type to integer data type so i could use that variable in the multiplication operation that occurs when getting the area, that way I am not multiplying numbers with strings```
 int_radius=int(radius)
 units=input('What units is the radius measured in?')
 area = 2*3.14*int_radius

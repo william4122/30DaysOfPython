@@ -39,12 +39,12 @@ print('Based off your measurements, the results are area =', area, 'and circumfe
 
 #8. Calculate the slope, x-intercept/y-intercept of y = 2x -2
 #m=(y-b)/x
-'''
+```
 y + 2 = 2x
 
 y+2/x = 2
 
-'''
+```
 
 
 #9. Slope is (m = y2-y1/x2-x1) find slope & euclidean distance between (2,2) and (6,10)
@@ -120,9 +120,9 @@ print('Working', hours_worked, 'hours for', hourly_rate, 'an hour gives you a we
 
 #22. Write a script that prompts the user to enter number of years. Calculate the number of seconds a person can live. Assume a person can live hundred years
 age=int(input('How old are you?'))
-'''
+```
 365 day/year * 24 hour/day * 60 min/hour * 60 seconds/min = seconds/year
-'''
+```
 seconds_in_year=(365*24*60*60)
 seconds_lived=(age*seconds_in_year)
 seconds_in_century=(seconds_in_year*100)
@@ -130,13 +130,13 @@ seconds_left=seconds_in_century-seconds_lived
 print('Based off your age, you have lived', seconds_lived, 'seconds; with that being said, you have', seconds_left, 'seconds left till 100!')
 
 #23. Write a Python script that displays the following table
-'''
+```
 1 1 1 1 1
 2 1 2 4 8
 3 1 3 9 27
 4 1 4 16 64
 5 1 5 25 125
-'''
+```
 #all this seems to doing is printing the exponents of a number starting from 0 -> 3
 #i looked up the solution here lol
 print(1, 1**0, 1**1, 1**2, 1**3)
