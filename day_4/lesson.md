@@ -325,21 +325,188 @@ ValueError: substring not found
     arguments = starting, ending index
     defaults 0 and string length -1 
 
-10.
+'''
+>>> challenge='thirty days of python'
+>>> sub_string='da'
+>>> print(challenge.index(sub_string))
+7
+>>> print(challenge.index(sub_string, 9))
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: substring not found
+>>> 
+'''
 
-11.
+10. isalnum(): checks alphanumeric character
 
-12.
+'''
+>>> challenge= 'ThirtyDaysPython'
+>>> print(challenge.isalnum())
+True
+>>> challenge='30DaysPython'   
+>>> print(challenge.isalnum())
+True
+>>> challenge-'thirty days of python'
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: unsupported operand type(s) for -: 'str' and 'str'
+>>> challenge='thirty days of python' 
+>>> print(challenge.isalnum())
+False
+>>> #False because space is not an alphanumeric character
+>>> challenge='thirty days of python 2019'
+>>> print(challenge.isalnum())
+False
+'''
 
-13.
+11. isalpha(): check if all string elements are alphabet characters (a-z & A-Z)
 
-14.
-15.
-16.
-17.
-18.
-19.
-20.
-21.
-22.
-23.
+'''
+>>> challenge='thirty days of python'
+>>> print(challenge.isalpha()) #False. space is excluded
+False
+>>> challenge='ThirtyDaysPython'
+>>> print(challenge.isalpha())
+True
+>>> num='123'
+>>> print(num.isalpha())
+False
+>>>
+'''
+
+12. isdecimal(): check if all characters in a string are decimal 0-9
+
+'''
+>>> challenge='thirty days of python'
+>>> print(challenge.isdecimal())
+False
+>>> challenge='123'
+>>> print(challenge.isdecimal())
+True
+'''
+
+13. isdigit(): checks if all characters in a string are numbers (0-9 and some other unicode characters for numbers)
+
+'''
+>>> challenge='Thirty'
+>>> print(challenge.isdigit()) #False
+False
+>>> challenge='30'
+>>> print(challenge.isdigit())
+'''
+
+14. isnumeric(): checks if all characters in a string are numbers or number related (just like isdigit(), just accepts more symbols like 1/2)
+
+'''
+>>> num='10'  
+>>> print(num.isnumeric())
+True
+>>> num='10.5'
+>>> print(num.isnumeric())
+False
+>>> num='u00BD'
+>>> print(num.isnumeric())
+False
+'''
+
+15. isidentifier(): check for a valid identifier - it checks if a string is a valid variable name
+
+'''
+>>> challenge='30DaysOfPython'
+>>> print(challenge.isidentifier()) #false, because it starts with a number
+False
+>>> challenge='thirty_days_of_python'      
+>>> print(challenge.isidentifier())
+True
+'''
+
+16. islower(): checks if all alphabet characters in the string are lowercase
+
+'''
+>>> challenge='thirty days of python'
+>>> print(challenge.islower())
+True
+>>> challenge='30 days of python'
+>>> print(challenge.islower())
+True
+>>> challenge='Thirty days of python'
+>>> print(challenge.islower())
+False
+'''
+
+17. isupper(): checks if all alphabet characters in the string are uppercase
+'''
+>>> challenge='thirty days of python'
+>>> print(challenge.isupper())
+False
+>>> challenge='THIRTY DAYS OF PYTHON'
+>>> print(challenge.isupper())
+True
+'''
+18. join(): returns a concatenated string
+
+'''
+>>> web_tech =['HTML', 'CSS', 'JavaScript', 'React']
+>>> result= ' '.join(web_tech)
+>>> print(result)
+HTML CSS JavaScript React
+>>> result='# '.join(web_tech)
+>>> print(result)
+HTML# CSS# JavaScript# React
+'''
+19. strip(): removes all given characters starting from the beginning and end of the string 
+'''
+>>> challenge='thirty days of pythooonnn'
+>>> print(challenge.strip('noth'))
+irty days of py
+'''
+20. replace(): replaces substring with a given string
+
+'''
+>>> challenge='thirty days of python'
+>>> print(challenge.replace('python', 'coding'))
+thirty days of coding
+'''
+
+21. split(): splits the string, using the given string or space as a seperator
+
+'''
+>>> challenge='thirty days of python'
+>>> print(challenge.split())
+['thirty', 'days', 'of', 'python']
+>>> challenge='thirty, days, of, python'
+>>> print(challenge.split(', '))
+['thirty', 'days', 'of', 'python']
+'''
+
+22. title(): returns a title cased string
+
+'''
+>>> challenge='thirty days of python'
+>>> print(challeng.title()) #Thirty days of python
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'challeng' is not defined. Did you mean: 'challenge'?
+>>> print(challenge.title()) #Thirty days of python 
+Thirty Days Of Python
+'''
+
+23. swapcase(): Converts all uppercase to lowercase & all lowercase chracters to uppercase characters. 
+'''
+>>> challenge='thirty days of python'
+>>> print(challenge.swapcase())
+THIRTY DAYS OF PYTHON
+>>> challenge='Thirty Days Of Python'
+>>> print(challenge.swapcase())
+tHIRTY dAYS oF pYTHON
+'''
+
+24. startswith(): Checks if string starts with the specified string
+'''
+>>> challenge='30 days of python'
+>>> print(challenge.startswith('thirty'))
+False
+>>> challenge='thirty days of python'
+>>> print(challenge.startswith('thirty'))
+True
+'''
