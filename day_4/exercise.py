@@ -139,3 +139,111 @@ print(first_because)
 
 #27. Slice out the phrase 'because because because' in the following sentence: 'You cannot end a sentence with because because because is a conjunction'
 sentence='You cannot end a sentence with because because because is a conjunction'
+sliced_part_a=sentence[0:31]
+sliced_part_b=sentence[55:71]
+whole_sentence=sliced_part_a + sliced_part_b
+print(whole_sentence)
+
+#28. Does ''Coding For All' start with a substring Coding?
+sentence='coding for all'
+print(sentence.find('coding'))
+
+#29. Does 'Coding For All' end with a substring coding?
+sentence='coding for all'
+help=sentence.rfind('coding', -1)
+print(help)
+
+#30
+# '   Coding For All      '  , remove the left and right trailing spaces in the given string.
+sentence='   Coding For All      ' 
+clean_sentence=sentence.strip()
+print(clean_sentence)
+
+'''
+#31. Which one of the following variables return True when we use the method isidentifier():
+30DaysOfPython
+thirty_days_of_python
+'''
+
+sentence='30DaysOfPython'
+print(sentence.isidentifier())
+
+sentence1='thirty_days_of_python'
+print(sentence1.isidentifier())
+
+#32. The following list contains the names of some of python libraries: ['Django', 'Flask', 'Bottle', 'Pyramid', 'Falcon']. Join the list with a hash with space string.
+libraries=['Django','Flask','Bottle','Pyramid','Falcon']
+space=' '
+django='Django'
+flask='Flask'
+bottle='Bottle'
+pyramid='Pyramid'
+falcon='Falcon'
+python_libraries=django + space + flask + space + bottle + space + pyramid + space + falcon
+print(python_libraries)
+
+#33. Use the new line escape sequence to separate the following sentences.
+'''I am enjoying this challenge.
+I just wonder what is next.'''
+
+sequence='''I am enjoying this challenge.
+I just wonder what is next.'''
+new_sequence='''I am enjoying this challenge.\n
+I just wonder what is next.'''
+print(new_sequence)
+
+#34. Use a tab escape sequence to write the following lines.
+'''Name      Age     Country   City
+Asabeneh  250     Finland   Helsinki'''
+row_one='Name\tAge\tCountry\tCity'
+row_two='Will\t26\tUSA\tMiami'
+nice=row_one + '\n' + row_two
+print(nice)
+
+#35. Use the string formatting method to display the following:
+'''radius = 10
+area = 3.14 * radius ** 2
+The area of a circle with radius 10 is 314 meters square.'''
+
+radius=10
+area=3.14 * radius ** 2
+calculate='The area of a circle with radius %d is %d meters squared' %(radius, area)
+print(calculate)
+
+#36. Make the following using string formatting methods:
+
+'''8 + 6 = 14
+8 - 6 = 2
+8 * 6 = 48
+8 / 6 = 1.33
+8 % 6 = 2
+8 // 6 = 1
+8 ** 6 = 262144'''
+
+# % formatting
+
+one='%d + %d = %d'%(8,6,8+6)
+print=one
+two='%d - %d = %d'%(8,6,8-6)
+print(two)
+three='%d * %d = %d'%(8,6,8*6)
+print(three)
+four='%d / %d = %d'%(8,6,8/6)
+print(four)
+five='%d '%' %d = %d'%(8,6,8%2)
+print(five) 
+six='%d // %d = %d'%(8,6,8//6)
+print(six)
+seven='%d ** %d = %d'%(8,6,8**6)
+print(seven)
+
+
+#format string ' {} ' .format{arg_1, arg_2}
+
+print('{} + {} = {}'.format(8,6,8+6))
+print('{} - {} = {}'.format(8,6,8-6))
+print('{} * {} = {}'.format(8,6,8*6))
+print('{} / {} = {:.2f}'.format(8,6,8/6))
+print('{} % {} = {}'.format(8,6,8%6))
+print('{} // {} = {}'.format(8,6,8//6))
+print('{} ** {} = {}'.format(8,6,8**6))
