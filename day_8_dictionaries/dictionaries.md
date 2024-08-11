@@ -117,11 +117,11 @@ False
 ```
 
 ## Removing Key and Value pairs from a dictionary
-
+``
 - pop(key): remove item with specified key name
 - popitem(): remove last item
 - del: remove item with specified key name
-
+``
 ```
 >>> dct={'key1':'value1','key2':'value2','key3':'value3','key4':'value4'}
 # using pop to delete a specific index 

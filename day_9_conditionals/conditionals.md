@@ -17,6 +17,12 @@ either return a true or false so boolean data type
 >= greater than or equal to 
 <= lesser than or equal to 
 
+other comparison operators:
+is: returns true if both variables are the same object (x is y)
+is not: returns true if both variables are not the same object (x is not y)
+in: returns true if queried list contains a certain item (x in y)
+not in: returns true if the queried list doesn't have a certain item (x not in y)
+
 Logical Operators
 operator :: description :: example
 and :: true if both statements are true :: x < 5 & x < 10 
