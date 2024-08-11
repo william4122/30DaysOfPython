@@ -73,5 +73,3 @@ del(student)
 print('Does the dictionary exist anymore?', student)
 ''' File "<string>", line 7, in <module>
 NameError: name 'student' is not defined'''
-
-
