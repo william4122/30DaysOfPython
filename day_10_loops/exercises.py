@@ -619,11 +619,6 @@ for fruit in fruits:
 fruits = ['banana', 'orange', 'mango', 'lemon']
 reversed_fruits = []
 
-for i in range(len(fruits) - 1, -1, -1):
-    reversed_fruits.append(fruits[i])
-
-print(reversed_fruits)
-
 
 '''
 Go to the data folder and use the countries_data.py file.
@@ -632,3 +627,7 @@ Find the ten most spoken languages from the data
 Find the 10 most populated countries in the world
 
 '''
+fruits=['banana', 'orange', 'mango', 'lemon']
+for i in range(len(fruits) - 1, -1, -1):
+    reversed_fruits.append(fruits[i])
+print(reversed_fruits)
