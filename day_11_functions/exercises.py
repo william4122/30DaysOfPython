@@ -172,3 +172,130 @@ def add_item(snack_list, *items):
         snack_list.append(item)
     return snack_list
 print('After adding your new selections, the current snack list is', add_item(snack_list, 'Fruit Loops','Gushers'))
+
+#12. Declare a function named remove_item. It takes a list and an item parameters. It returns a list with the item removed from it.
+#probably the same thing as this but with a different method on the list, it literally was, just using the remove list method 
+
+snack_list=['Apple','Banana','Cranberry','Doritos','Fruit Loops', 'Gushers']
+def remove_item(snack_list, *items):
+    for item in items:
+        snack_list.remove(item)
+    return snack_list
+print('After removing your selections, the current snack list is', remove_item(snack_list, 'Fruit Loops','Gushers'))
+
+#13.Declare a function named sum_of_numbers. It takes a number parameter and it adds all the numbers in that range.
+#get the range of the argument 
+#ummm does range give me list or???
+#add the numbers in the range
+#return result
+
+def sum_of_numbers(number):
+    numbers_to_add=range(number+1)
+    total=sum(numbers_to_add)
+    return total
+print('The sum of the range for the number you provided is', sum_of_numbers(7))
+
+#I ended up having to do a +1 for the range function because it starts from 0 and when you sum 0->6 you get 21 and thats not what i input as the argument in my solution
+
+#14. Declare a function named sum_of_odds. It takes a number parameter and it adds all the odd numbers in that range.
+#get the range of numbers for the argument provided
+#do an odd test for the number
+#sum the odds
+#return that result
+
+#I got this to work on 9/28/24! 
+def sum_of_odds(number):
+    numbers_range=range(number+1)
+    odd_list=[]
+    for number in numbers_range:
+        if number % 2 > 0:
+            odd_list.append(number)
+        odd_sum=sum(odd_list)
+    return odd_sum
+print('The sum of the odd numbers in the range of the number you provided is', sum_of_odds(5))    
+
+#15. Declare a function named sum_of_even. It takes a number parameter and it adds all the even numbers in that - range.
+#it was the exact same thing as the last problem i just had to use this common thing that i can tell if a number is even or odd by checking what the remainder of division by 2 is, the moment is not = to 0 its odd.
+def sum_of_evens(number):
+    numbers_range=range(number+1)
+    even_list=[]
+    for number in numbers_range:
+        if number % 2 == 0:
+            even_list.append(number)
+        even_sum=sum(even_list)
+    return even_sum
+print('The sum of the even numbers in the range of the number you provided is', sum_of_evens(5))
+
+#level 2
+#1. Declare a function named evens_and_odds . It takes a positive integer as parameter and it counts number of evens and odds in the number.
+#im thinking probably the same as the last problem but instead i have two lists that I check how many elements they have with length? 
+
+def evens_and_odds(number):
+    numbers_range=range(number+1)
+    even_list=[]
+    odd_list=[]
+    for number in numbers_range:
+        if number % 2 == 0:
+            even_list.append(number)
+        elif number % 2 > 0:
+            odd_list.append(number)
+    count = ('The number of odds are', len(odd_list), '\nThe number of evens are', len(even_list))
+    return count
+print(evens_and_odds(100))
+
+'''
+I got the right answer! But I need to make it pretty lol
+>>> print(evens_and_odds(100))
+('The number of odds are', 50, '\n The number of evens are', 51)
+'''
+
+#I think I need string concatenation to make it pretty here 
+#4.2 in my notes
+
+def evens_and_odds(number):
+    numbers_range=range(number+1)
+    even_list=[]
+    odd_list=[]
+    for number in numbers_range:
+        if number % 2 == 0:
+            even_list.append(number)
+        elif number % 2 > 0:
+            odd_list.append(number)
+    odd_count =('The number of odds are', len(odd_list))
+    even_count=('The number of evens are', len(even_list))
+    return odd_count + even_count
+print(evens_and_odds(100))
+
+'''
+This works but returns the following traceback? Need an explanation 
+
+>>> print(evens_and_odds(100))
+The number of odds are 50
+The number of evens are 51
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 12, in evens_and_odds
+TypeError: unsupported operand type(s) for +: 'NoneType' and 'NoneType'
+'''
+#THIS IS THE BEST ANSWER
+'''
+>>> print(evens_and_odds(100))
+The number of odds are 50
+The number of evens are 51
+'''
+def evens_and_odds(number):
+    numbers_range=range(number+1)
+    even_list=[]
+    odd_list=[]
+    for number in numbers_range:
+        if number % 2 == 0:
+            even_list.append(number)
+        elif number % 2 > 0:
+            odd_list.append(number)
+    odd_count =('The number of odds are %s'%(len(odd_list)))
+    even_count=('\nThe number of evens are %s'%(len(even_list)))
+    return odd_count + even_count
+print(evens_and_odds(100))
+#THIS IS THE BEST ANSWER GOOD OLD STRING FORMATTING https://github.com/william4122/30DaysOfPython/blob/main/day_4_strings/lesson.md#old-style-string-formatting--operator
+
+
