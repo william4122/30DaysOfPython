@@ -299,3 +299,80 @@ print(evens_and_odds(100))
 #THIS IS THE BEST ANSWER GOOD OLD STRING FORMATTING https://github.com/william4122/30DaysOfPython/blob/main/day_4_strings/lesson.md#old-style-string-formatting--operator
 
 
+#2 Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
+'''
+to recap factorials are 
+5! = 5*4*3*2*1 = 120
+'''
+
+def factorial(whole_number):
+    whole_number=5
+    total=[]
+    counter = whole_number
+    while counter > 0:
+        counter -1 
+        total.append(counter)
+    print(total)
+
+
+whole_number=5
+total=[]
+counter = whole_number
+while counter > 0:
+    counter -1 == counter 
+total.append(counter)
+print(total)
+
+#3. Call your function is_empty, it takes a parameter and it checks if it is empty or not
+def is_empty(*anything):
+    result='The provided input is empty or 0'
+    false_result='Your provided input is not empty, you provided,' anything
+    if anything == 0:
+        return result
+    elif len(anything) == 0:
+        return result
+    elif anything != 0:
+        return false_result
+    elif len(anything) != 0:
+        return false_result
+print(is_empty())
+
+#I dont know if my solution is right but I put is empty() it gives me the result
+#I also put 0 and it works but whatever lol 
+
+#4. Write different functions which take lists. They should calculate_mean, calculate_median, calculate_mode, calculate_range, calculate_variance, calculate_std (standard deviation).
+def calculate_mean(numbers):
+    mean= sum(numbers)/len(numbers)
+    return mean
+calculate_mean([1,2,3,4,5])
+
+def calculate_median(numbers):
+    median=numbers[len(numbers)//2]
+    return median
+calculate_median([1,2,3,4,5])
+
+#mode is the number that appears the most in the set of numbers
+#you can count items in a list but you need to know what you are counting for
+#how can i get the number to count though lol 
+def calculate_mode(numbers)
+
+def calculate_range(numbers):
+    range=numbers[len(numbers)-1] - numbers[0]
+    return range
+calculate_range([1,2,3,4,5])
+
+#variance
+
+#std deviation
+
+
+'''
+Exercises: Level 3
+Write a function called is_prime, which checks if a number is prime.
+Write a functions which checks if all items are unique in the list.
+Write a function which checks if all the items of the list are of the same data type.
+Write a function which check if provided variable is a valid python variable
+Go to the data folder and access the countries-data.py file.
+Create a function called the most_spoken_languages in the world. It should return 10 or 20 most spoken languages in the world in descending order
+Create a function called the most_populated_countries. It should return 10 or 20 most populated countries in descending order.
+'''
