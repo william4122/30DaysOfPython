@@ -27,7 +27,7 @@ print(second_flattened_list)
 '''Some explanation over why the above is 3d and the other is 2d, levels of nesting through brackets; similar to nesting order of operations with parenthesis 
 
 Exactly! You can think of that extra pair of brackets in a similar way to parentheses in math—they introduce another level of nesting, making the structure more complex.
-'''
+''' 
 list_of_lists =[[[1, 2, 3]], [[4, 5, 6]], [[7, 8, 9]]]
 par_list_of_lists = [[1,2,3],[4,5,6],[7,8,9]]
 
