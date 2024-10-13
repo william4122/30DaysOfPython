@@ -1,4 +1,4 @@
-# Higher Order Functions
+# 14. Higher Order Functions
 - Functions are treated as first class citizens in python, we can do the following on them:
     - Functions can take one or more functions as parameters
     - Function can be returned as a result of another function
